@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>红心</title>
+    <style>
+        .xin{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            /* 圆角 */
+            border-radius: 50px;
+        }
+        .xin1{
+            width: 100px;
+            height: 100px;
+            background-color:red;
+            /* 圆角 */
+            border-radius: 50px;
+            /* 定位 相对于正常位置移动 */
+            position: relative;
+            left: 85px;
+            top: -100px;
+        }
+        .xin2{
+            width: 100px;
+            height: 100px;
+            background-color:red;
+             /* 定位 相对于正常位置移动 */
+            position: relative;
+            left: 43px;
+            top: -158px;
+            /* 旋转 角度 */
+            transform: rotate(45deg);
+        }
+        .x{
+            width: 200px;
+            height: 200px;
+            animation: x 0.3s linear infinite alternate;
+        }
+        @keyframes x {
+            0%{
+                transform: scale(1);
+            }
+            100%{
+                transform: scale(0.8);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="x">
+        <div class="xin"> </div>
+        <div class="xin1"> </div>
+        <div class="xin2"> </div>
+    </div>
+</body>
+</html>
